@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "alwaysStrict" : true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "target": "es2017",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "build/",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "allowSyntheticDefaultImports": true      
+}, 
+    "include": [
+      "src/**/*.ts"
+    ]
+  }
