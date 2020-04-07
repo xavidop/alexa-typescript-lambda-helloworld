@@ -39,25 +39,26 @@ These are the main files of the project:
 
 ```bash
 
-    ├───.ask
+    ├───.ask/
     │       config
-    ├───.vscode
+    ├───.vscode/
     │       launch.json
-    ├───hooks
-    ├───lambda
-    │   └───custom
+    ├───hooks/
+    ├───lambda/
+    │   └───custom/
+    │       │   └───build/
     │       │   local-debugger.js
     │       │   package.json
     │       │   tsconfig.json
     │       │   tslint.json
-    │       └───src
+    │       └───src/
     │           ├───index.ts
-    │           ├───errors
-    │           ├───intents
-    │           ├───interceptors
-    │           └───utilities
+    │           ├───errors/
+    │           ├───intents/
+    │           ├───interceptors/
+    │           └───utilities/
     │
-    ├───models
+    ├───models/
     └───skill.json
 
 ```
@@ -77,8 +78,9 @@ These are the main files of the project:
   * `intents`: this one contains all the intent handlers
   * `interceptors`: interceptors' folder with the i18n initialization
   * `utilities`: this folder contains the i18n strings, helper functions, constants and TypeScript interfaces
-* models – A folder that contains interaction models for the skill. Each interaction model is defined in a JSON file named according to the locale. For example, es-ES.json.
-* `skill.json` – The skill manifest. One of the most important files in our project.
+  * `build`: the output folder after compiling the TypeScript code
+* models – A folder that contains interaction models for the skill. Each interaction model is defined in a JSON file named according to the locale. For example, es-ES.json
+* `skill.json` – The skill manifest. One of the most important files in our project
 
 
 ### Lambda function in TypeScript
